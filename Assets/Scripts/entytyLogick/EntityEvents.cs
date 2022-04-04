@@ -107,6 +107,7 @@ public class EntityEvents : MonoBehaviour
             if(foundGameObject == null)
             {
                 StopCoroutine(findPerTime());
+                yield return 0;
             }
             target = foundGameObject.transform.position;
             target.y = transform.position.y;
@@ -133,6 +134,10 @@ public class EntityEvents : MonoBehaviour
                     currentGameObject = currentTarget;
                     distance = currentDistance;
                 }
+            }
+            if(currentGameObject != default)
+            {
+                break;
             }
         }        
 

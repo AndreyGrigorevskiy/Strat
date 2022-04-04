@@ -131,4 +131,4 @@ MonoBehaviour:
   moveSpeed: 0.03
   canMove: 1
   timeBetweenFind: 0.03
-  currentTags: 01000000
+  currentTags: 0100000000000000

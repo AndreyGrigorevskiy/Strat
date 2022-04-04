@@ -704,6 +704,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: neutralSpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 1861126680233576347, guid: 2418af3e32e70fb48bf1d7f5bc7c5a59, type: 3}
+      propertyPath: keepSpawning
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1861126680233576348, guid: 2418af3e32e70fb48bf1d7f5bc7c5a59, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -884,7 +888,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4917477969590230350, guid: 09d871c9f521e9a4887d283f9afe469d, type: 3}
       propertyPath: timeBetweenSpawn
-      value: 0.5
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09d871c9f521e9a4887d283f9afe469d, type: 3}
@@ -900,8 +904,12 @@ PrefabInstance:
       value: frendlyEntitySpawner
       objectReference: {fileID: 0}
     - target: {fileID: 6434933627138416406, guid: 37d2784b3b7d30a41867eb42f3a33ea4, type: 3}
+      propertyPath: RangeIner
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6434933627138416406, guid: 37d2784b3b7d30a41867eb42f3a33ea4, type: 3}
       propertyPath: RangeOuter
-      value: 1
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 6434933627138416406, guid: 37d2784b3b7d30a41867eb42f3a33ea4, type: 3}
       propertyPath: currentForm
@@ -913,7 +921,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6434933627138416406, guid: 37d2784b3b7d30a41867eb42f3a33ea4, type: 3}
       propertyPath: timeBetweenSpawn
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6434933627138416407, guid: 37d2784b3b7d30a41867eb42f3a33ea4, type: 3}
       propertyPath: m_RootOrder
