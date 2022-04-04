@@ -27,7 +27,7 @@ public class SpawnNewGameObjectInRange : MonoBehaviour
         }
         else
         {
-            StartCoroutine(spawmEnamyPerTimesquare());
+            StartCoroutine(spawmEnamyPerTimeSquare());
         }
 
     }
@@ -54,7 +54,7 @@ public class SpawnNewGameObjectInRange : MonoBehaviour
         }
     }
 
-    private IEnumerator spawmEnamyPerTimesquare()
+    private IEnumerator spawmEnamyPerTimeSquare()
     {
         while (keepSpawning)
         {
@@ -73,31 +73,30 @@ public class SpawnNewGameObjectInRange : MonoBehaviour
         float randomZ;
         float randomX;
 
+        float rand1;
+        float rand2;
 
-        if(Random.value < 0.25f)
+        rand1 = Random.Range(-RangeOuter, RangeOuter);
+        rand2 = Random.Range(RangeIner, RangeOuter);
+
+        if (Random.value < 0.5f)
         {
-            randomZ = Random.Range(RangeIner, RangeOuter);
-            randomX = Random.Range(-RangeOuter, RangeOuter);
+            rand2 = -rand2;
         }
-        else if (Random.value < 0.5f)
+        if (Random.value < 0.5f)
         {
-            randomZ = Random.Range(-RangeOuter, -RangeIner);
-            randomX = Random.Range(-RangeOuter, RangeOuter);
-        }
-        else if (Random.value < 0.75f)
-        {
-            randomZ = Random.Range(-RangeOuter, RangeOuter);
-            randomX = Random.Range(-RangeOuter, -RangeIner);
+            randomZ = -rand1;
+            randomX = rand2;
         }
         else
         {
-            randomZ = Random.Range(-RangeOuter, RangeOuter);
-            randomX = Random.Range(RangeIner, RangeOuter);
+            randomZ = rand2;
+            randomX = -rand1;
         }
 
         Vector3 newPosition;
-        newPosition.x = transform.position.x + randomX;
-        newPosition.z = transform.position.z + randomZ;
+        newPosition.x = randomX;
+        newPosition.z = randomZ;
         newPosition.y = transform.position.y;
 
         return newPosition;

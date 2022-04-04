@@ -693,6 +693,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1861126679947254704
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1861126680233576346, guid: 2418af3e32e70fb48bf1d7f5bc7c5a59, type: 3}
+      propertyPath: m_Name
+      value: neutralSpawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 1861126680233576348, guid: 2418af3e32e70fb48bf1d7f5bc7c5a59, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1861126680233576348, guid: 2418af3e32e70fb48bf1d7f5bc7c5a59, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1861126680233576348, guid: 2418af3e32e70fb48bf1d7f5bc7c5a59, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1861126680233576348, guid: 2418af3e32e70fb48bf1d7f5bc7c5a59, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1861126680233576348, guid: 2418af3e32e70fb48bf1d7f5bc7c5a59, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1861126680233576348, guid: 2418af3e32e70fb48bf1d7f5bc7c5a59, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1861126680233576348, guid: 2418af3e32e70fb48bf1d7f5bc7c5a59, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1861126680233576348, guid: 2418af3e32e70fb48bf1d7f5bc7c5a59, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1861126680233576348, guid: 2418af3e32e70fb48bf1d7f5bc7c5a59, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1861126680233576348, guid: 2418af3e32e70fb48bf1d7f5bc7c5a59, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1861126680233576348, guid: 2418af3e32e70fb48bf1d7f5bc7c5a59, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2418af3e32e70fb48bf1d7f5bc7c5a59, type: 3}
 --- !u!1001 &2881962657857484439
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -811,15 +868,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4917477969590230350, guid: 09d871c9f521e9a4887d283f9afe469d, type: 3}
       propertyPath: RangeIner
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4917477969590230350, guid: 09d871c9f521e9a4887d283f9afe469d, type: 3}
       propertyPath: RangeOuter
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4917477969590230350, guid: 09d871c9f521e9a4887d283f9afe469d, type: 3}
       propertyPath: currentForm
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4917477969590230350, guid: 09d871c9f521e9a4887d283f9afe469d, type: 3}
       propertyPath: keepSpawning
@@ -827,7 +884,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4917477969590230350, guid: 09d871c9f521e9a4887d283f9afe469d, type: 3}
       propertyPath: timeBetweenSpawn
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09d871c9f521e9a4887d283f9afe469d, type: 3}
@@ -843,8 +900,20 @@ PrefabInstance:
       value: frendlyEntitySpawner
       objectReference: {fileID: 0}
     - target: {fileID: 6434933627138416406, guid: 37d2784b3b7d30a41867eb42f3a33ea4, type: 3}
+      propertyPath: RangeOuter
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6434933627138416406, guid: 37d2784b3b7d30a41867eb42f3a33ea4, type: 3}
+      propertyPath: currentForm
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6434933627138416406, guid: 37d2784b3b7d30a41867eb42f3a33ea4, type: 3}
+      propertyPath: keepSpawning
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6434933627138416406, guid: 37d2784b3b7d30a41867eb42f3a33ea4, type: 3}
       propertyPath: timeBetweenSpawn
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6434933627138416407, guid: 37d2784b3b7d30a41867eb42f3a33ea4, type: 3}
       propertyPath: m_RootOrder
