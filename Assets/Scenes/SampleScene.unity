@@ -880,7 +880,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4917477969590230350, guid: 09d871c9f521e9a4887d283f9afe469d, type: 3}
       propertyPath: currentForm
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4917477969590230350, guid: 09d871c9f521e9a4887d283f9afe469d, type: 3}
       propertyPath: keepSpawning
