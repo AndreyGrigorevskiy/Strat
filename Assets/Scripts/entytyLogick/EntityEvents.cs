@@ -11,17 +11,33 @@ public enum TagsToChoose
 public class EntityEvents : MonoBehaviour
 {
     public float damage;
+    public float maxHealth;
     public float health;
     public float attacSpeedPerSecond;
     public float moveSpeed;
     public bool  canMove;
     public float timeBetweenFind;
     public TagsToChoose[] currentTags;
-    
+    public GameObject hpBarPrefab;
+    public Transform canvasTransform;
+    public Transform hpBarAnchor;
+
     private string[] currentEntityTags;
     private GameObject[][] targets;
     private Vector3 target;
     private float waitActtacTime;
+    private HPBar _hpBar;
+
+
+    private void Awake()
+    {
+        health = maxHealth;
+
+        var bar = Instantiate(hpBarPrefab, canvasTransform);
+
+        _hpBar = bar.GetComponent<HPBar>();
+        _hpBar.Initialize(hpBarAnchor, this);
+    }
 
     private void Start()
     {
@@ -80,6 +96,7 @@ public class EntityEvents : MonoBehaviour
         health -= damage;
         if (health <= 0)
         {
+            Destroy(_hpBar);
             Destroy(gameObject);
         }
     }
