@@ -33,10 +33,10 @@ public class EntityEvents : MonoBehaviour
     {
         health = maxHealth;
 
-        var bar = Instantiate(hpBarPrefab, canvasTransform);
+        //var bar = Instantiate(hpBarPrefab, canvasTransform);
 
-        _hpBar = bar.GetComponent<HPBar>();
-        _hpBar.Initialize(hpBarAnchor, this);
+        //_hpBar = bar.GetComponent<HPBar>();
+        //_hpBar.Initialize(hpBarAnchor, this);
     }
 
     private void Start()

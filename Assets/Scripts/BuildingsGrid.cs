@@ -69,10 +69,7 @@ public class BuildingsGrid : MonoBehaviour
         {
             for (int y = 0; y < flyingBuild.Size.y; y++)
             {
-                Debug.Log("GridLength: " + grid.Length);
-                Debug.Log("placeX: " + placeX);
-                Debug.Log("placeY: " + placeY);
-                Debug.Log("Answer: " + grid[GridSize.x + placeX + x, GridSize.y + placeY + y] != null);
+
                 if (grid[GridSize.x + placeX + x, GridSize.x + placeY + y] != null) return true;
                 
             }

@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 779901755975253053}
   - component: {fileID: 2323591185229618644}
+  - component: {fileID: -421072190280667222}
   m_Layer: 0
   m_Name: Home_Cast
-  m_TagString: Untagged
+  m_TagString: build
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,6 +47,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MainRenderer: {fileID: 7880118413115597454}
   Size: {x: 1, y: 1}
+--- !u!64 &-421072190280667222
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2506729142152742996}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1710425572717105975, guid: d2dc89081cc9210488f488201025de97, type: 3}
 --- !u!1001 &8834470736361405962
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -110,12 +125,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 4f182a2abc4dec740941fbfbfb886364, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4f182a2abc4dec740941fbfbfb886364, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: cae02dbcf7e8fd8479ef48e2da16e87c, type: 2}
     - target: {fileID: 919132149155446097, guid: 4f182a2abc4dec740941fbfbfb886364, type: 3}
       propertyPath: m_Name
       value: Home_Cast
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4f182a2abc4dec740941fbfbfb886364, type: 3}
+      propertyPath: m_TagString
+      value: build
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f182a2abc4dec740941fbfbfb886364, type: 3}

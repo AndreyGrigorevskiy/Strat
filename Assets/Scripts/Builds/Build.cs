@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Build : MonoBehaviour
@@ -31,6 +29,7 @@ public class Build : MonoBehaviour
         MainRenderer.material.color = defaultColor;
     }
 
+
     private void OnDrawGizmos()
     {
        for (int x = 0; x<Size.x;x++)
@@ -41,5 +40,11 @@ public class Build : MonoBehaviour
                 Gizmos.DrawCube(transform.position + new Vector3(x, 0, y),new Vector3(1, .1f, 1));
             }
        }
+    }
+
+    public void DeleteObject()
+    {
+        Destroy(gameObject);
+        Debug.Log("test");
     }
 }
